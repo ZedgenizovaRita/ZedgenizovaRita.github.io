@@ -1,1 +1,90 @@
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+.header {
+    background: #696;
+    color: white;
+    text-align: left;
+    padding: 40px;
+    padding-left: max(240px, 20vw);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #366;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 0px;
+    /*box-shadow: 2px 0 5px rgba(0,0,0,0.1);*/
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background: #996;
+    /*border-radius: 50%;*/
+    margin: 24px auto 23px auto;
+    display: block;
+}
+
+.menu {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    background: #366;
+    margin: 0px;
+    transition: background 0.3s;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.menu li:hover {
+    background: #285757;
+}
+
+.submenu {
+    display: none;
+    position: static;
+    left: 0;
+    top: 100%;
+    background: #285757;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    /*box-shadow: 2px 2px 5px rgba(0,0,0,0.1);*/
+}
+
+.menu li:hover .submenu {
+    display: block;
+    margin-top: 15px;
+}
+
+.submenu li {
+    padding: 10px;
+    background: #285757;
+    text-align: center;
+}
+
+.submenu li:hover {
+    background: #366;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    font-size: 20px;
+}
