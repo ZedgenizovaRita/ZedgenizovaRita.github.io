@@ -2,7 +2,7 @@
 <html lang="ru">
  <head>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Отзывы</title>
     <meta charset="utf-8">
  </head>
@@ -22,8 +22,8 @@
         <div class="dropdown">
             <button class="dropbtn" onclick="myFunction()">Преимущества</button>
             <div class="dropdown-content" id="myDropdown">
-              <a href="index3.html">Природа</a>
-              <a href="index3.html">Города</a>
+              <a href="index3_1.html">Природа</a>
+              <a href="index3_2.html">Города</a>
             </div>
         </div>
         </li>
@@ -31,12 +31,44 @@
         <li><a href="index5.html">Галерея</a></li>
         <li><a href="index6.html">Ссылки</a></li>
     </ul>
-   </nav>
-
+  </nav>
 
   <main>
-    
+    <section class="feedback-form">
+      <h2>Оставьте свой отзыв о заМКАДье</h2>
+      <form id="reviewForm">
+          <input type="text" id="name" placeholder="Ваше имя" required>
+          <textarea id="review" placeholder="Ваш отзыв" required></textarea>
+          <button type="submit">Отправить</button>
+      </form>
+      <button id="clearReviews" class="blueb">
+        Очистить отзывы
+      </button>
+    </section>
 
+    <section id="reviews">
+      <h2>Отзывы пользователей</h2>
+      <!-- Нестираемые отзывы -->
+      <div class="review">
+        <strong>Андрей (Искусственный Интеллект)</strong><br>
+        <p>Скорее уж я сменяю квартиру на частный дом. Не люблю Москву, мне её ритм жизни не нравится.</p>
+      </div>
+
+      <div class="review">
+        <strong>ПотомокПодданыхРоссийскойИмперии (Высший разум)</strong><br>
+        <p>3/4 жителей Подмосковья ездят на работу в Москву и на вопрос о месте проживания отвечают - Москва.</p>
+      </div>
+
+      <div class="review">
+        <strong>Olka</strong><br>
+        <p>мы в январе переехали из Москвы в г Реутов, это правда 1-2 км от Мкада, т.е. прям около него :))) переехали в новый микрорайон, только недавно его построили, даже некоторые дома еще троят. Очень нравится, все новой, консьержи, видеонаблюдение. Единственный минус и огромный - это квартплата. Она в 3 раза больше чем в Москве. А так все утраивает. В конце концов это ж не за 100 км от города уезжать. :)))</p>
+      </div>
+
+      <div class="review">
+        <strong>Anastasia</strong><br>
+        <p>Мы вот тоже об этом думаем.А муж говорит,что Москву хотят расширять на 20 км,и возможно ближайшее подмосковье скоро окажется Москвой.Вот и думаем...</p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
